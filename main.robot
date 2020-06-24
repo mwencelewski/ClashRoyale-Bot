@@ -9,6 +9,8 @@ ${team_name}=    The Resistance
 ${output_path}=    ./output/
 ${key_name}=    RobotKey
 ${key_description}=    A key for for API usage.
+${email} =     dummyemail@dummy.com
+${password} =     [Put-Your-Password-Here]
 *** Tasks ***
 Start Application
     
@@ -16,8 +18,8 @@ Start Application
     Open Site
     log_info    -- Preparing to log in to system --
     Click Login
-    Input Username    mauro.wencelewski@gmail.com
-    Input Password    Wen.Paix100817
+    Input Username    ${email}
+    Input Password    ${password}
     Click Login Button
     log_info    -- Navigating to the Account Menu --
     Click Account Button
