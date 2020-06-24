@@ -96,8 +96,9 @@ Input New Key Information
     Wait Until Page Contains Element    class:alert.alert-success
 
 Extract API Key
-    #Extracting API Key
+    #Checks for the correct API Key, open it and return to the main code.
     [Arguments]    ${key_name}
+    log_info    -- Locating the API Key --
     Wait Until Page Contains Element    class:dev-site-icon-key.dev-site-icon
     Click Element    xpath://h4[contains(text(),'${key_name}')]
     Wait Until Page Contains Element    class:form-control.input-lg
