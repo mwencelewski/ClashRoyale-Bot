@@ -9,8 +9,8 @@ ${team_name}=    The Resistance
 ${output_path}=    ./output/
 ${key_name}=    RobotKey
 ${key_description}=    A key for for API usage.
-${email} =     dummyemail@dummy.com
-${password} =     [Put-Your-Password-Here]
+${email} =     dummyemail@email.com
+${password} =     Your-Password-Here
 *** Tasks ***
 Start Application
     
